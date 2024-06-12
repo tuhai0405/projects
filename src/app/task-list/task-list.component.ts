@@ -23,7 +23,7 @@ ngOnInit(): void {
 
 xoatask(id:any){
 this.http.xoaTask(id).subscribe((response)=>{
-  console.log('tuhaicobo');
+  console.log('tuhai');
 })
 }
   
