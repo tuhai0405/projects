@@ -1,0 +1,63 @@
+ 
+<div class="container" style="font-family: Arial; font-size: 15px;" >
+  <nav id="thanhmenu" class="d-flex flex-column" style="width: 1310px; height: 60px;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand"  href="#">Quản Lý Dự Án FPTPoly</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#" routerLink="/">Bảng điều khiển</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Giới thiệu</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Quản lý dự Án
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" routerLink="/du_an/them">Thêm dự án</a></li>
+                <li><a class="dropdown-item" href="#" routerLink="/du_an">danh sách dự án</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Quản lý Nhân Viên
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" routerLink="/nhan_vien/them">Thêm nhân viên</a></li>
+                <li><a class="dropdown-item" href="#" routerLink="/nhan_vien">danh sách nhân viên</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Quản lý Task
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" routerLink="/task/them">Thêm task</a></li>
+                <li><a class="dropdown-item" href="#" routerLink="/task">Danh sách task</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-outline-success" type="submit">Đăng Nhập</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </nav>
+  <!-- <nav id="breadcrumb" class="bg-warning-subtle" style="height: 45px;"></nav> -->
+  <main class="d-flex" style="min-height: 300px;">
+    <article class="col-md-9" id="cottrai">
+      <router-outlet></router-outlet>
+    </article>
+    <aside class="col-md-3" id="cotphai">
+     
+    </aside>
+  </main>
+  <footer class=" text-dark text-center py-2" style="height: 45px;">haitvpd07298-2024</footer>
+</div>
